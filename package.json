@@ -1,0 +1,27 @@
+{
+	"name": "@awesome-tools/commitizen",
+	"bin": "./index.js",
+	"version": "1.0.0",
+	"description": "Commitizen for awesome-tools",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Basant Soni <basantech89@gmail.com> (https://basant.netlify.app/)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/basantech89/commitizen.git"
+	},
+	"keywords": [
+		"commitizen",
+		"awesome-tools"
+	],
+	"bugs": {
+		"url": "https://github.com/basantech89/commitizen/issues"
+	},
+	"homepage": "https://github.com/basantech89/commitizen#readme",
+	"license": "ISC",
+	"dependencies": {
+		"commitizen": "^4.2.4"
+	}
+}

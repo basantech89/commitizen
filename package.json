@@ -1,29 +1,53 @@
 {
-	"name": "@awesome-tools/commitizen",
-	"private": false,
-	"bin": "./index.js",
-	"version": "1.0.0",
-	"description": "Commitizen for awesome-tools",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Basant Soni <basantech89@gmail.com> (https://basant.netlify.app/)",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/basantech89/commitizen.git"
-	},
-	"keywords": [
-		"commitizen",
-		"awesome-tools"
-	],
-	"bugs": {
-		"url": "https://github.com/basantech89/commitizen/issues"
-	},
-	"homepage": "https://github.com/basantech89/commitizen#readme",
-	"license": "ISC",
-	"dependencies": {
-		"commitizen": "^4.2.4",
-		"cz-conventional-changelog": "^3.3.0"
-	}
+  "name": "@awesome-tools/commitizen",
+  "private": false,
+  "bin": "./index.js",
+  "version": "0.0.0-development",
+  "description": "Commitizen for multi or mono repo projects.",
+  "main": "index.js",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "author": "Basant Soni <basantech89@gmail.com> (https://basant.netlify.app/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basantech89/commitizen.git"
+  },
+  "keywords": [
+    "commitizen",
+		"javascript",
+    "cz-conventional-changelog",
+    "awesome-tools"
+  ],
+  "bugs": {
+    "url": "https://github.com/basantech89/commitizen/issues"
+  },
+  "homepage": "https://github.com/basantech89/commitizen#readme",
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      "next",
+      "next-major",
+      "{name: 'beta', prerelease: true}",
+      "{name: 'alpha', prerelease: true}"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "semantic-release": "^18.0.1"
+  }
 }

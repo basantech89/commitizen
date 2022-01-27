@@ -2,7 +2,7 @@
   "name": "@awesome-tools/commitizen",
   "private": false,
   "bin": "./index.js",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "Commitizen for multi or mono repo projects.",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "commitizen",
-		"javascript",
+    "javascript",
     "cz-conventional-changelog",
     "awesome-tools"
   ],
